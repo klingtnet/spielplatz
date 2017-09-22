@@ -1,6 +1,0 @@
-- name: Restart journal process
-  listen: restart-journald
-  become: true
-  systemd:
-    name: systemd-journald
-    state: restarted

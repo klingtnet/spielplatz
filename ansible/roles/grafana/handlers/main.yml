@@ -1,7 +1,0 @@
-- name: Restart grafana
-  listen: restart-grafana
-  become: true
-  systemd:
-    daemon_reload: true
-    name: grafana
-    state: restarted

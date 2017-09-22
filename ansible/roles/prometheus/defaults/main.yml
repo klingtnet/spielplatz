@@ -1,3 +1,0 @@
-prometheus_path: /usr/bin/prometheus
-prometheus_config_path: /etc/prometheus/config.yml
-prometheus_port: 9090
