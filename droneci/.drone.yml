@@ -1,0 +1,17 @@
+workspace:
+  base: /go
+  path: src/github.com/klingt.net/spielplatz/droneci
+
+pipeline:
+  build:
+    image: golang:latest
+    image: golang:${GO_VERSION}
+    commands:
+      - go get
+      - go test
+
+matrix:
+  GO_VERSION:
+    - latest
+    - "1.8"
+    - "1.7"
