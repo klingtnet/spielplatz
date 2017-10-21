@@ -1,6 +1,6 @@
 workspace:
   base: /go
-  path: src/github.com/klingt.net/spielplatz/droneci
+  path: src/github.com/klingt.net/spielplatz
 
 pipeline:
   build:
@@ -8,7 +8,7 @@ pipeline:
     image: golang:${GO_VERSION}
     commands:
       - go get
-      - go test
+      - go test ./droneci/...
 
 matrix:
   GO_VERSION:
