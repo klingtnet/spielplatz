@@ -7,7 +7,6 @@ pipeline:
     image: golang:latest
     image: golang:${GO_VERSION}
     commands:
-      - go get
       - go test ./droneci/...
 
 matrix:
