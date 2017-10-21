@@ -5,4 +5,7 @@ So, how do you mirror a repository to github then?
 I think the easiest and most straightforward way is to specify a git-hook to do exactly this.
 First specify both remotes, in my chase those are `git remote add <origin> <repo-URL>` and `git remote add <mirror> <repo-URL>`.
 Now create the hook: `$ echo 'git push --force --mirror <mirror>' > .git/hooks/post-commit'.
-The next time you push your changes into `<origin>` the changes will be automatically mirrored into `<mirror>`. Voila!
+The next time you push your changes into `<origin>` the changes will be automatically mirrored into `<mirror>`.
+Voila!
+
+More information about git hooks can be found in `man githooks` and usually there is a bunch of sample files in `.git/hooks`.
