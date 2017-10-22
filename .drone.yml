@@ -4,7 +4,6 @@ workspace:
 
 pipeline:
   build:
-    image: golang:latest
     image: golang:${GO_VERSION}
     commands:
       - go test ./droneci/...
